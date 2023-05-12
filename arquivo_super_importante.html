@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myButton {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-40%, -40%);
+}
+.botao-container {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+      
+    .botao {
+        text-decoration: none;
+        background-color: #f31202;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+    }
+    
+    .quente {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+      
+    .quente-botão {
+        text-decoration: none;
+        background-color: #f31202;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+    }
+
+    .quente2 {
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+    }
+      
+    .quente3 {
+        text-decoration: none;
+        background-color: #f31202;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        margin: 0 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="display: grid;
+        width: 100%;
+        justify-content: center; 
+        font-size: 50px;"
+        >Bora sair algum dia ???</h1>
+    </header>
+
+    <div class="botao-container">
+        <a target="_blank" href="https://www.youtube.com/watch?v=skVg5FlVKS0" class="botao"> sim</a>
+        <a href="" class="quente-botão" id="myButton">não</a>
+    </div>
+
+    <div class="quente2">
+        <a class="quente3" href="https://www.youtube.com/watch?v=izGwDsrQ1eQ">Aqui o negocio fica quente!!!!</a>
+    </div>
+
+
+   
+
+    <script>
+        const button = document.querySelector('#myButton');
+
+        button.addEventListener('mouseover', () => {
+        const newTop = Math.floor(Math.random() * (window.innerHeight - button.offsetHeight));
+        const newLeft = Math.floor(Math.random() * (window.innerWidth - button.offsetWidth));
+        button.style.top = newTop + 'px';
+        button.style.left = newLeft + 'px';
+        });
+    </script>
+</body>
+</html>
